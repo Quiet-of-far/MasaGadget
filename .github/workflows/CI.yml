@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - 'parepre-to-release'
+      - 'dev'
     paths:
       - '**/*.gradle'
       - '**/gradle.properties'
