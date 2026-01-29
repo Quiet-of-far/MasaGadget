@@ -105,7 +105,7 @@ jobs:
           #   push
           #     true / FORK / false / - / dev
           else
-              if [ "$GH_EVENT_NAME" == 'release' ]
+              if [ "$GH_EVENT_NAME" == 'release' ] || [ "$GH_EVENT_NAME" == 'workflow_dispatch' ]
               then
                   build_version_type=FORK
                   publish_enable=true
